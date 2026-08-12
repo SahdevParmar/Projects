@@ -147,3 +147,8 @@ main {
     box-shadow: 5px 5px 10px 2px rgba(10, 10, 10, 0.116);
     transform: scale(1.2);
 }
+
+section .task-column.hover-over {
+    transform: scale(1.01);
+    transition: all 0.2s;
+}
