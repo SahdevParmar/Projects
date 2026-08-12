@@ -2,6 +2,7 @@ const todo = document.querySelector("#todo")
 const progress = document.querySelector("#progress")
 const done = document.querySelector("#done")
 let dragElement = null;
+const addNewButton = document.querySelector('.addNewButton')
 
 const tasks = document.querySelectorAll('.task');
 tasks.forEach(task => {
@@ -30,3 +31,6 @@ function addDragEventsOnColumn(column) {
 addDragEventsOnColumn(todo);
 addDragEventsOnColumn(progress);
 addDragEventsOnColumn(done);
+addNewButton.addEventListener("click", (e) => {
+    document.querySelector('.modal').style.display = 'flex'
+})
