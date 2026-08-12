@@ -11,14 +11,14 @@ body {
 }
 
 :root {
-    --bg-color: #2C2C2C;
+    --bg-color: #242424;
     --bg-button-color: rgb(197, 222, 255);
     --button-text-color: rgb(46, 50, 51);
     --primary-text-color: rgb(234, 232, 232);
     --delete-color: rgb(216, 52, 65);
     /* padding variables */
-    --nav-padding: 12px 24px;
-    --section-padding: 12px 24px;
+    --nav-padding: 16px 28px;
+    --section-padding: 24px 32px;
     --padding-s: 6px;
     --padding-m: 8px;
     --padding-l: 12px;
@@ -31,7 +31,7 @@ body {
     --border-radius-xl: 16px;
     --border-radius-xxl: 24px;
 
-    --bg-task-color:#34373b;
+    --bg-task-color: #3f475242;
 }
 
 html {
@@ -51,21 +51,29 @@ nav {
     align-items: center;
 
     border-bottom: 0.1px solid rgba(242, 242, 242, 0.072);
+    font-size: x-large;
+}
+
+nav h2 {
+    color: rgb(212, 212, 174);
+    font-style: oblique;
 }
 
 button {
     background-color: var(--bg-button-color);
     border: none;
     outline: none;
-    padding: var(--padding-m) var(--padding-l);
+    padding: var(--padding-l) var(--padding-xxl);
     cursor: pointer;
     color: var(--button-text-color);
-    border-radius: var(--border-radius-s);
+    border-radius: var(--border-radius-m);
+    font-size: large;
+    font-weight: 600;
 }
 
 button:hover {
     transform: scale(1.01);
-        box-shadow: 0px 0px 20px 1px rgba(150, 222, 249, 0.232);
+    box-shadow: 0px 0px 20px 1px rgba(150, 222, 249, 0.232);
 
 
 }
@@ -74,8 +82,9 @@ section {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    gap: var(--padding-xl);
+    gap: var(--padding-xxl);
     padding: var(--section-padding);
+    margin: 1%;
 
 
 }
@@ -106,11 +115,11 @@ main {
 }
 
 .task {
-    background-color:var(--bg-task-color);
+    background-color: var(--bg-task-color);
     border-radius: var(--border-radius-m);
     padding: var(--padding-l) var(--padding-xl);
     position: relative;
-    min-height: 80px;
+    min-height: 120px;
     cursor: grab;
     transition: all 0.1s ease-out;
 }
@@ -122,7 +131,7 @@ main {
 
 .task-list {
     flex-grow: 1;
-    padding: var(--padding-m) var(--padding-l);
+    padding: var(--padding-l) var(--padding-xl);
     display: flex;
     flex-direction: column;
     gap: var(--padding-l);
@@ -140,7 +149,7 @@ main {
     right: -2px;
     background-color: var(--delete-color);
     border: none;
-    padding: var(--padding-s);
+    padding: var(--padding-m);
     border-radius: 50px;
     cursor: pointer;
 
@@ -149,45 +158,56 @@ main {
 .delete-button:hover {
     box-shadow: 5px 5px 10px 2px rgba(10, 10, 10, 0.116);
     transform: scale(1.2);
-            box-shadow: 0px 0px 2px 1px rgb(121, 42, 42);
+    box-shadow: 0px 0px 2px 1px rgb(121, 42, 42);
 
 }
-.hover-over{
+
+.hover-over {
     transform: scale(1.02);
     transition: all 0.3s ease-out;
 }
-.modal{
+
+.modal {
     height: 100%;
     display: none;
     align-items: center;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     /* backdrop-filter: blur(10px) brightness(95%); */
     position: fixed;
     top: 0;
     width: 100%;
-    
+
+
 }
-input{
-    padding: var(--padding-m) var(--padding-l);
-    border-radius: var(--border-radius-s);
+
+input {
+    padding: var(--padding-xl) var(--padding-xl);
+    border-radius: var(--border-radius-m);
     border: none;
     background-color: var(--bg-task-color);
+    font-size: large;
+    margin-right: var(--padding-xxl);
+    margin-left: var(--padding-xxl);
 }
-.modal form{
-    background-color:rgba(0, 0, 0, 0.352) ;
+
+.modal form {
+    background-color: rgba(42, 48, 56, 0.226);
     display: flex;
     flex-direction: column;
     padding: var(--section-padding);
     border: 1px solid rgb(86, 86, 86);
     border-radius: var(--border-radius-m);
-    gap: 10px;
+    gap: 30px;
     backdrop-filter: blur(10px) brightness(95%);
     transition: all 0.1s ease-out;
-    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.493);
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.219);
+    font-size: large;
+    align-items: center;
 
 }
-.modal form:hover{
+
+.modal form:hover {
     transform: scale(1.01);
-    
+
 }
