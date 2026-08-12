@@ -161,6 +161,7 @@ main {
     position: fixed;
     top: 0;
     width: 100%;
+    
 }
 input{
     padding: var(--padding-m) var(--padding-l);
@@ -178,7 +179,9 @@ input{
     backdrop-filter: blur(10px) brightness(95%);
     transition: all 0.1s ease-out;
     box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.493);
+
 }
 .modal form:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
+    
 }
