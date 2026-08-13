@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="left">
+                <label for="image-input">
+                    <div class="bottom" id="card">
+                    
+                        <div class="placeholder" >
+                            <i class="ri-landscape-ai-fill"></i>
+                            <label>Add Image</label>
+                        </div>
+                    
+                    </div>
+                </label>
+                <div class="top">
+                    <label for="image-input" class="btn">
+                        Choose Image
+                        <input type="file" id="image-input" accept="image/*" hidden>
+                    </label>
+                    <button class="btn">Reset</button>
+                    <button class="btn">
+                        Download&nbsp
+                        <i class="ri-arrow-down-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="right" id="card">
+                <h2>Filters</h2>
+                <div class="filters">
+                <div>
+                <label for="brightness">Brightness</label>
+                <input name="brightness" type="range" min="0" max="200" value="100">
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
