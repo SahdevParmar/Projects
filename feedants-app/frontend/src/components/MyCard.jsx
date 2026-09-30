@@ -4,10 +4,10 @@ import { ArrowUpRight, Trophy } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MyCard = () => {
+const MyCard = ({id}) => {
   return (
     <div className='w-85'>
-       <Link to='/id123' >
+      <Link to={`/${id}`} >
         <div className='flex flex-col  border-gray-300 border-2  py-4 px-2 gap-2 rounded-md '>
           
           <h2 className='font-extrabold text-2xl  px-2 text-neutral-700'>Feedants Classical Dance</h2>

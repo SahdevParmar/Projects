@@ -126,7 +126,7 @@ const CompetitionById = () => {
                   <div>
                     <p className='text-gray-500 text-sm'>Register Before</p>
                   <p className='text-green-700 font-semibold'>
-                    {}
+                    
                     </p>
                   <p>11:50 PM</p>
                   </div>
