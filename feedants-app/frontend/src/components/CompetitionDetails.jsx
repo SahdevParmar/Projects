@@ -15,7 +15,7 @@ export default function CompetitionDetails({ competition, userState }) {
   ];
 
   return (
-    <div className="flex-col  justify-between    border-gray-300 border-2 overflow-hidden  py-4 px-4 gap-2 rounded-xl  font-medium">
+    <div className="flex-col  justify-between shadow-md   border-gray-300 border-2 overflow-hidden  py-4 px-4 gap-2 rounded-xl  font-medium">
       {/* ── Tabs ─────────────────────────────────────── */}
       <div className="flex border-b border-slate-100">
         {tabs.map((tab) => (

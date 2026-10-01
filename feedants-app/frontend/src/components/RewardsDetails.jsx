@@ -15,7 +15,7 @@ export default function RewardDetails({ competition, userState }) {
   ];
 
   return (
-    <div className="flex-col  justify-between  grow max-w-120  border-gray-300 border-2 overflow-hidden  py-4 px-4 gap-2 rounded-xl  font-medium">
+    <div className="flex-col  justify-between shadow-md  grow max-w-120  border-gray-300 border-2 overflow-hidden  py-4 px-4 gap-2 rounded-xl  font-medium">
       
       {/* ── Rewards ──────────────────────────────────── */}
       <div className="p-4 border-t border-slate-100">

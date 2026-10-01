@@ -27,10 +27,10 @@ const Competition = () => {
       <div>
       competition main Page
     </div>
-    <div className='p-4 flex flex-wrap gap-4'>
+    <div className='p-4 flex flex-wrap gap-4 '>
      {
       allCompetitions.map((competition)=>{
-        return <MyCard id={competition._id} key={competition._id} />
+        return <MyCard competition={competition} key={competition._id} />
       })
      }
     </div>
